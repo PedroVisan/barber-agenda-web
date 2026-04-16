@@ -1,10 +1,25 @@
-HELP.md
+# --- NODE / NEXT.JS (Frontend) ---
+node_modules/
+.next/
+out/
+build/
+.env*.local
+.vercel
+*.tsbuildinfo
+
+# --- JAVA / MAVEN (Backend) ---
 target/
-.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+HELP.md
 
-### STS ###
+# --- IDEs (VS Code, IntelliJ, STS) ---
+.vscode/
+.idea/
+*.iws
+*.iml
+*.ipr
 .apt_generated
 .classpath
 .factorypath
@@ -13,21 +28,7 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
-.vscode/
+# --- SISTEMA E LOGS ---
+*.log
+.DS_Store
+Thumbs.db
