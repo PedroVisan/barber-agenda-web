@@ -2,7 +2,6 @@
 import { useState } from "react";
 import { Calendar, User, Phone, Scissors, MessageCircle, Check } from "lucide-react";
 
-// 1. Tipagem adicionada para o TypeScript aprovar o build
 interface Servico {
   id: number;
   nome: string;
@@ -15,11 +14,10 @@ export default function Home() {
   const [data, setData] = useState("");
   const [horario, setHorario] = useState("");
   
-  // 2. Avisando ao Next.js que o ID começa nulo, mas será um número
+  // AQUI ESTÁ A CORREÇÃO: Avisando que pode ser número ou nulo
   const [servicoId, setServicoId] = useState<number | null>(null);
   const [sobrancelha, setSobrancelha] = useState(false);
 
-  // 3. Tipando a lista de serviços
   const servicos: Servico[] = [
     { id: 1, nome: "Corte Simples", preco: 50 },
     { id: 2, nome: "Corte Navalhado", preco: 60 },
